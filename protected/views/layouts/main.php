@@ -38,7 +38,8 @@
         <link href="megaSlider/md-slider.css" rel="stylesheet" type="text/css">
         <link href="megaSlider/animate.css" rel="stylesheet" type="text/css">
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>               
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
         
         <!--<script type="text/javascript" src="megaSlider/jquery.min.js"></script>-->
         <script src="megaSlider/jquery.touchwipe.js"></script><style type="text/css"></style>
@@ -51,6 +52,8 @@
         <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
         <script src="js/templatemo_script.js"  type="text/javascript"></script>
         <script src="login-modal/js/main.js"></script> <!-- Gem jQuery -->
+        
+       
         
         <script type="text/javascript" charset="utf-8">
             

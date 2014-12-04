@@ -89,13 +89,20 @@ class SiteController extends Controller
 		// collect user input data
 		if(isset($_POST['LoginForm']))
 		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
+                    $usuario = Perfil::model()->find("Usuario=? AND Clave=?",array($_POST['LoginForm']['username'],$_POST['LoginForm']['password']));
+                    if($usuario){
+                        $usuario->ultimoIngreso = date("Y-m-d H:i:s");
+                        $usuario->enSesion = 1;
+                        $usuario->save();
+                        Yii::app()->session['user'] = $usuario;
+                        echo json_encode(array('respuesta'=>true,'msg'=>'Ingreso exitoso'));die;
+                    }else{
+                        echo json_encode(array('respuesta'=>false,'msg'=>'El usuario o contraseña son incorrectos'));die;
+                    }
+//                    var_dump($answer);
 		}
 		// display the login form
-		$this->render('login',array('model'=>$model));
+                $this->render('login',array('model'=>$model));
 	}
 
 	/**

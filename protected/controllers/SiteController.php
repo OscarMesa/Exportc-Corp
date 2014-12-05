@@ -20,6 +20,17 @@ class SiteController extends Controller
 			),
 		);
 	}
+        
+        public function validarLogin()
+        {
+            if(isset(Yii::app()->session['user']))
+            {
+                $usuario = Yii::app()->session['user'];
+                $usrdDB = Perfil::model()->find("IdPerfil=?",array($usuario->IdPerfil));
+                if($usrdDB->enSesion == 0)
+                    unset (Yii::app()->session['user']);
+            }
+        }
 
 	/**
 	 * This is the default 'index' action that is invoked
@@ -29,7 +40,8 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+            $this->validarLogin();
+            $this->render('index');
 	}
 
 	/**
@@ -100,7 +112,9 @@ class SiteController extends Controller
                         echo json_encode(array('respuesta'=>false,'msg'=>'El usuario o contraseña son incorrectos'));die;
                     }
 //                    var_dump($answer);
-		}
+		}else{
+                    $this->validarLogin();
+                }
 		// display the login form
                 $this->render('login',array('model'=>$model));
 	}
@@ -110,7 +124,11 @@ class SiteController extends Controller
 	 */
 	public function actionLogout()
 	{
-		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->homeUrl);
+//		Yii::app()->user->logout();
+            $usuario = Yii::app()->session['user'];
+            $usuario->enSesion = 0;
+            $usuario->save();
+            unset(Yii::app()->session['user']);
+            $this->redirect(Yii::app()->homeUrl);
 	}
 }

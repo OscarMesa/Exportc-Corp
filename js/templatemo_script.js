@@ -61,12 +61,25 @@ jQuery(function($) {
 });
 
 function initialize() {
+    var myLatlng = new google.maps.LatLng(6.230833,-75.59055599999999);
     var mapOptions = {
-      zoom: 12,
-      center: new google.maps.LatLng(16.8451789,96.1439764)
+        zoom: 12,
+        center: myLatlng,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-
+ 
     var map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
+    
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Import Logistic'
+  });
 }
 
 // scroll animation 

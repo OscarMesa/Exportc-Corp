@@ -107,8 +107,11 @@
                     <div class="main-nav">
                         <ul>
                             <!-- inser more links here -->
-                            <li><a class="cd-signin" href="#0">Sign in</a></li>
-                            <li><a class="cd-signup" href="#0">Sign up</a></li>
+                            <?php if(!isset(Yii::app()->session['user'])){ ?>
+                            <li><a id="init" class="cd-signin" href="#0">Entrar</a></li>
+                            <?php }else{ ?>
+                            <li><a class="cd-signup" id="logut" href="<?php echo Yii::app()->createAbsoluteUrl("site/logout");?>">Cerrar sesión</a></li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -571,7 +574,7 @@
                         <p><img src="images/location.png" alt="icon 1" /> 123 Dagon Studio, Yakin Street, Digital Estate</p>
                         <p><img src="images/phone1.png"  alt="icon 2" /> 010-020-0340</p>
                         <p><img src="images/globe.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.templatemo.com</span></a></p>
-                        <form class="form-horizontal" action="#">
+                        <form class="form-horizontal" action="#" style="display: none">
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
                             </div>

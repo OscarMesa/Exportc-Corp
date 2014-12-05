@@ -54,8 +54,8 @@ return array(
 		'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=trosky',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'root',
+			'username' => USER_MYSQL,
+			'password' => USER_MYSQL_PASS,
 			'charset' => 'utf8',
 		),
 		

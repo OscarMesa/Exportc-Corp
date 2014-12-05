@@ -57,9 +57,11 @@ $(document).on('ready',function(){
         }
       })
         .done(function( data ) {
+            sw = false;
           if ( data.respuesta ) {
-            alert(data.msg);
-            document.getElementById("frm-login").reset();
+//            document.getElementById("frm-login").reset();
+            window.location = "http://import.openetwork.co/main.php?action=FormMain";
+            sw = true;
             $("#error-login").css("visibility","hidden");
           }else{
               $("#error-login").css("visibility","initial");
@@ -67,6 +69,10 @@ $(document).on('ready',function(){
               $("#error-login").html(data.msg);
           }
           $("#cargando").hide();
+          if(sw)
+          {
+            //  setTimeout(function(){ location.reload(); },300);
+          }
         });
 //        $("#frm-login").submit();
         e.preventDefault();

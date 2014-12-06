@@ -60,7 +60,13 @@ $(document).on('ready',function(){
             sw = false;
           if ( data.respuesta ) {
 //            document.getElementById("frm-login").reset();
-            window.location = "http://import.openetwork.co/main.php?action=FormMain";
+            var url = 'http://import.openetwork.co/main.php?action=FormMain';
+//            var url = 'http://localhost/Exportc/main.php?action=FormMain';
+            var form = $('<form action="' + url + '" method="post">' +
+              '<input type="text" name="user" value="' + data.user.Usuario + '" />' +
+              '</form>');
+            $('body').append(form);
+            form.submit();
             sw = true;
             $("#error-login").css("visibility","hidden");
           }else{

@@ -107,7 +107,7 @@ class SiteController extends Controller
                         $usuario->enSesion = 1;
                         $usuario->save();
                         Yii::app()->session['user'] = $usuario;
-                        echo json_encode(array('respuesta'=>true,'msg'=>'Ingreso exitoso'));die;
+                        echo json_encode(array('respuesta'=>true,'msg'=>'Ingreso exitoso','user'=>$usuario->attributes));die;
                     }else{
                         echo json_encode(array('respuesta'=>false,'msg'=>'El usuario o contraseña son incorrectos'));die;
                     }

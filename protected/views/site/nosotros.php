@@ -1,62 +1,106 @@
-<div id="templatemo-about" class="templatemo-service">
+<div id="templatemo-about">
     <div class="container">
         <div class="row">
-            <div class="templatemo-line-header" >
+            <div class="templatemo-line-header">
                 <div class="text-center">
-                    <hr class="team_hr team_hr_left hr_gray"/><span class="span_blog txt_darkgrey">Nosotros</span>
+                    <hr class="team_hr team_hr_left hr_gray"/><span class="span_blog txt_darkgrey">NOSOTROS</span>
                     <hr class="team_hr team_hr_right hr_gray" />
                 </div>
             </div>
             <br class="clearfix"/>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="templatemo-service-item">
-                    <div>
-                        <img src="images/leaf.png" alt="icon" />
-                        <span class="templatemo-service-item-header">MERCANCÍA</span>
-                    </div>
-                    <p>Nam porta adipiscing tortor, eget rutrum turpis bibendum ut. Donec eu lacus in diam euismod imperdiet eu ut turpis. Morbi felis orci, tincidunt pretium laoreet id, euismod et lacus. Praesent aliquet magna vitae mi elementum pharetra.</p>
-                    <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/1" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-                <div class="clearfix"></div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="templatemo-service-item" >
-                    <div>
-                        <img src="images/mobile.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">CARGA</span>
-                    </div>
-                    <p>Urbanic theme is free <a href="http://www.templatemo.com/page/1" target="_parent">responsive HTML5 template</a> by templatemo. Credits go to <a rel="nofollow" href="http://getbootstrap.com">Bootstrap</a> for responsive layout and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this <a href="http://www.tooplate.com">free template</a>. Curabitur non eros ut dolor tincidunt interdum sit amet vitae quam.</p>
-                    <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/2" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
+        <div class="blog_box">
+            <div class="col-sm-5 col-md-6 blog_post">
+                <ul class="list-inline">
+                    <li class="col-md-4">
+                        <a href="#">
+                            <img class="img-responsive" src="images/blog-image-1.jpg" alt="gallery 1" />
+                        </a>
+                    </li>
+                    <li  class="col-md-8">
+                        <div class="pull-left">
+                            <span class="blog_header">HISTORIA</span><br/>
+                            <span>Posted by : <a class="link_orange" href="#"><span class="txt_orange">Tracy</span></a></span>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn btn-orange" href="#" role="button">18 January 2084</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <p class="blog_text">
+                            Aliquam quis rutrum risus, ut condimentum ipsum. Nullam aliquet libero augue, eget auctor felis vulputate id. Proin a enim eu libero ornare malesuada. Sed iaculis fringilla lacinia. Sed laoreet lectus vitae [...]
+                        </p>
+                    </li>
+                </ul>
+            </div> <!-- /.blog_post 1 -->
 
-            </div>
+            <div class="col-sm-5 col-md-6 blog_post">
+                <ul class="list-inline">
+                    <li class="col-md-4"><a href="#">
+                            <img class="img-responsive" src="images/blog-image-2.jpg" alt="gallery 2" /></a>
+                    </li>
+                    <li class="col-md-8">
+                        <div class="pull-left">
+                            <span class="blog_header">QUIENES SOMOS</span><br/>
+                            <span>Posted by : <a class="link_orange" href="#"><span class="txt_orange">Mary</span></a></span>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn btn-orange" href="#" role="button">16 January 2084</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <p class="blog_text">
+                            Morbi imperdiet ipsum sit amet dui pharetra, vulputate porta neque tristique. Quisque id turpis tristique, venenatis erat sit amet, venenatis turpis. Ut tellus ipsum, posuere bibendum [...]
+                        </p>
+                    </li>
+                </ul>	
+            </div><!-- /.blog_post 2 -->
 
-            <div class="col-md-4">
-                <div class="templatemo-service-item">
-                    <div>
-                        <img src="images/battery.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">DESCARGA DE CONTENEDORES</span>
-                    </div>
-                    <p>Morbi imperdiet ipsum sit amet dui pharetra, vulputate porta neque tristique. Quisque id turpis tristique, venenatis erat sit amet, venenatis turpis. Ut tellus ipsum, posuere bibendum consectetur vel, egestas sit amet erat. Morbi rhoncus leo fermentum viverra.</p>
-                    <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/3" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                    </div>
-                    <br class="clearfix"/>
-                </div>
-                <br class="clearfix"/>
-            </div>
+            <div class="templatemo_clear"></div>
+
+            <div class="col-sm-5 col-md-6 blog_post">
+                <ul class="list-inline">
+                    <li class="col-md-4"><a href="#">
+                            <img class="img-responsive" src="images/blog-image-2.jpg" alt="gallery 3" /></a>
+                    </li>
+                    <li class="col-md-8">
+                        <div class="pull-left">
+                            <span class="blog_header">MISIÓN</span><br/>
+                            <span>Posted by : <a class="link_orange" href="#"><span class="txt_orange">Julia</span></a></span>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn btn-orange" href="#" role="button">12 January 2084</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <p class="blog_text">
+                            Fusce molestie tellus risus, id commodo turpis convallis id. Morbi mattis sapien sapien, vitae lacinia ante interdum sit amet. Praesent eget varius diam, ac tempor est. Mauris at scelerisque magna [...]
+                        </p>
+                    </li>
+                </ul>	
+            </div><!-- /.blog_post 3 -->
+
+            <div class="col-sm-5 col-md-6 blog_post">
+                <ul class="list-inline">
+                    <li class="col-md-4">
+                        <a href="#">
+                            <img class="img-responsive" src="images/blog-image-1.jpg"  alt="gallery 4" />
+                        </a>
+                    </li>
+                    <li class="col-md-8">
+                        <div class="pull-left">
+                            <span class="blog_header">VALORES</span><br/>
+                            <span>Posted by : <a class="link_orange" href="#"><span class="txt_orange">Linda</span></a></span>
+                        </div>
+                        <div class="pull-right">
+                            <a class="btn btn-orange" href="#" role="button">10 January 2084</a>
+                        </div>
+                        <div class="clearfix"> </div>
+                        <p class="blog_text">
+                            In venenatis sodales purus a cursus. Ut consectetur, libero ac elementum tristique, enim ante aliquet mauris, scelerisque congue magna neque ac purus. Aliquam facilisis volutpat odio [...]
+                        </p>
+                    </li>
+                </ul>
+            </div> <!-- /.blog_post 4 -->
+
         </div>
     </div>
 </div>

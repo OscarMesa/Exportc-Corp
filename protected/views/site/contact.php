@@ -1,85 +1,37 @@
-<?php
-/* @var $this SiteController */
-/* @var $model ContactForm */
-/* @var $form CActiveForm */
+<div id="templatemo-contact">
+    <div class="container">
+        <div class="row">
+            <div class="templatemo-line-header head_contact" >
+                <div class="text-center">
+                    <hr class="team_hr team_hr_left hr_gray"/><span class="txt_darkgrey">CONTACTO</span>
+                    <hr class="team_hr team_hr_right hr_gray"/>
+                </div>
+            </div>
 
-$this->pageTitle=Yii::app()->name . ' - Contact Us';
-$this->breadcrumbs=array(
-	'Contact',
-);
-?>
+            <div class="col-md-8">
+                <div class="templatemo-contact-map" id="map-canvas"> </div>  
+                <div class="clearfix"></div>
+                <i>You can find us on 123 Dagon Studio, Yankin Street, <span class="txt_orange">Digital Estate</span> in Yangon.</i>
+            </div>
+            <div class="col-md-4 contact_right">
+                <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit pendisse as a molesti.</p>
+                <p><img src="images/location.png" alt="icon 1" /> 123 Dagon Studio, Yakin Street, Digital Estate</p>
+                <p><img src="images/phone1.png"  alt="icon 2" /> 010-020-0340</p>
+                <p><img src="images/globe.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.templatemo.com</span></a></p>
+                <form class="form-horizontal" action="#" style="display: none">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email..." maxlength="40" />
+                    </div>
+                    <div class="form-group">
+                        <textarea  class="form-control" style="height: 130px;" placeholder="Write down your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange pull-right">SEND</button>
+                </form>
 
-<h1>Contact Us</h1>
-
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
-
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
-</div>
-
-<?php else: ?>
-
-<p>
-If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
-</p>
-
-<div class="form">
-
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'contact-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name'); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email'); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'subject'); ?>
-		<?php echo $form->textField($model,'subject',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'subject'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'body'); ?>
-		<?php echo $form->textArea($model,'body',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'body'); ?>
-	</div>
-
-	<?php if(CCaptcha::checkRequirements()): ?>
-	<div class="row">
-		<?php echo $form->labelEx($model,'verifyCode'); ?>
-		<div>
-		<?php $this->widget('CCaptcha'); ?>
-		<?php echo $form->textField($model,'verifyCode'); ?>
-		</div>
-		<div class="hint">Please enter the letters as they are shown in the image above.
-		<br/>Letters are not case-sensitive.</div>
-		<?php echo $form->error($model,'verifyCode'); ?>
-	</div>
-	<?php endif; ?>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-
-</div><!-- form -->
-
-<?php endif; ?>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /#templatemo-contact -->

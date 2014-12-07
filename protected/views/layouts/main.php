@@ -61,7 +61,7 @@
                 $("#md-slider").mdSlider({
                     transitions: 'strip-up-left',
                     height: 320,
-                    width: 800,
+                    width: 1000,
                     fullwidth: true,
                     showArrow: true,
                     showLoading: false,
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="templatemo-top-menu">
+        <div class="templatemo-top-menu" style="background-color: #FFF; z-index: 1">
             <div class="container">
                 <!-- Static navbar -->
                 <div class="navbar navbar-default" role="navigation">
@@ -129,15 +129,17 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="http://www.templatemo.com/preview/templatemo_395_urbanic" rel="nofollow"><img src="images/templatemo_logo.png" alt="logo"/></a>
+                            <a class="navbar-brand" href="" rel="nofollow">
+                                <img src="images/importLogistica_logo.jpg" alt="logo"/>
+                            </a>
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
-                                <li class="active"><a href="#templatemo-top">HOME</a></li>
-                                <li><a href="#templatemo-about">ABOUT</a></li>
-                                <li><a href="#templatemo-portfolio">PORTFOLIO</a></li>
-                                <li><a href="#templatemo-blog">BLOG</a></li>
-                                <li><a href="#templatemo-contact">CONTACT</a></li>
+                                    <li class="active"><a href="#templatemo-top">INICIO</a></li>
+                                <li><a href="#templatemo-about">NOSOTROS</a></li>
+                                <li><a href="#templatemo-blog">SERVICIOS</a></li>
+                                <li><a href="#templatemo-contact">CONTACTO</a></li>
+                                <!--<li><a href="#templatemo-contact">CONTACT</a></li>-->
                             </ul>
                         </div><!--/.nav-collapse -->
                     </div><!--/.container-fluid -->
@@ -150,145 +152,13 @@
         <div class="templatemo-welcome" id="templatemo-welcome">
             <div class="container">
                 <div class="templatemo-slogan text-center">
-                    <span class="txt_darkgrey">Welcome to </span><span class="txt_orange">Urbanic Design</span>
-                    <p class="txt_slogan"><i>Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam metus libero mauriec ignissim fermentum.</i></p>
+                    <span class="txt_darkgrey">Bienvenido a </span><span class="txt_orange">Import Logistica</span>
+                    <!--<p class="txt_slogan"><i>Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam metus libero mauriec ignissim fermentum.</i></p>-->
                 </div>	
             </div>
         </div>
 
-        <div class="templatemo-service">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="templatemo-service-item">
-                            <div>
-                                <img src="images/leaf.png" alt="icon" />
-                                <span class="templatemo-service-item-header">AWESOME ICONS</span>
-                            </div>
-                            <p>Nam porta adipiscing tortor, eget rutrum turpis bibendum ut. Donec eu lacus in diam euismod imperdiet eu ut turpis. Morbi felis orci, tincidunt pretium laoreet id, euismod et lacus. Praesent aliquet magna vitae mi elementum pharetra.</p>
-                            <div class="text-center">
-                                <a rel="nofollow" href="http://www.templatemo.com/page/1" 
-                                   class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                            </div>
-                            <br class="clearfix"/>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="templatemo-service-item" >
-                            <div>
-                                <img src="images/mobile.png" alt="icon"/>
-                                <span class="templatemo-service-item-header">FULLY RESPONSIVE</span>
-                            </div>
-                            <p>Urbanic theme is free <a href="http://www.templatemo.com/page/1" target="_parent">responsive HTML5 template</a> by templatemo. Credits go to <a rel="nofollow" href="http://getbootstrap.com">Bootstrap</a> for responsive layout and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this <a href="http://www.tooplate.com">free template</a>. Curabitur non eros ut dolor tincidunt interdum sit amet vitae quam.</p>
-                            <div class="text-center">
-                                <a rel="nofollow" href="http://www.templatemo.com/page/2" 
-                                   class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                            </div>
-                            <br class="clearfix"/>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="templatemo-service-item">
-                            <div>
-                                <img src="images/battery.png" alt="icon"/>
-                                <span class="templatemo-service-item-header">HIGH EFFICIENCY</span>
-                            </div>
-                            <p>Morbi imperdiet ipsum sit amet dui pharetra, vulputate porta neque tristique. Quisque id turpis tristique, venenatis erat sit amet, venenatis turpis. Ut tellus ipsum, posuere bibendum consectetur vel, egestas sit amet erat. Morbi rhoncus leo fermentum viverra.</p>
-                            <div class="text-center">
-                                <a rel="nofollow" href="http://www.templatemo.com/page/3" 
-                                   class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
-                            </div>
-                            <br class="clearfix"/>
-                        </div>
-                        <br class="clearfix"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="templatemo-team" id="templatemo-about">
-            <div class="container">
-                <div class="row">
-                    <div class="templatemo-line-header">
-                        <div class="text-center">
-                            <hr class="team_hr team_hr_left"/><span>MEET OUR TEAM</span>
-                            <hr class="team_hr team_hr_right" />
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-                <ul class="row row_team">
-                    <li class="col-lg-3 col-md-3 col-sm-6 ">
-                        <div class="text-center">
-                            <div class="member-thumb">
-                                <img src="images/member1.jpg" class="img-responsive" alt="member 1" />
-                                <div class="thumb-overlay">
-                                    <a href="#"><span class="social-icon-fb"></span></a>
-                                    <a href="#"><span class="social-icon-twitter"></span></a>
-                                    <a href="#"><span class="social-icon-linkedin"></span></a>
-                                </div>
-                            </div>
-                            <div class="team-inner">
-                                <p class="team-inner-header">TRACY</p>
-                                <p class="team-inner-subtext">Designer</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 ">
-                        <div class="text-center">
-                            <div class="member-thumb">
-                                <img src="images/member2.jpg" class="img-responsive" alt="member 2" />
-                                <div class="thumb-overlay">
-                                    <a href="https://www.facebook.com/templatemo" rel="nofollow"><span class="social-icon-fb"></span></a>
-                                    <a href="#"><span class="social-icon-twitter"></span></a>
-                                    <a href="#"><span class="social-icon-linkedin"></span></a>
-                                </div>
-                            </div>
-                            <div class="team-inner">
-                                <p class="team-inner-header">MARY</p>
-                                <p class="team-inner-subtext">Developer</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 ">
-                        <div class="text-center">
-                            <div class="member-thumb">
-                                <img src="images/member3.jpg" class="img-responsive" alt="member 3" />
-                                <div class="thumb-overlay">
-                                    <a href="#"><span class="social-icon-fb"></span></a>
-                                    <a href="#"><span class="social-icon-twitter"></span></a>
-                                    <a href="#"><span class="social-icon-linkedin"></span></a>
-                                </div>
-                            </div>
-                            <div class="team-inner">
-                                <p class="team-inner-header">JULIA</p>
-                                <p class="team-inner-subtext">Director</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="col-lg-3 col-md-3 col-sm-6 ">
-                        <div class="text-center">
-                            <div class="member-thumb">
-                                <img src="images/member4.jpg" class="img-responsive" alt="member 4" />
-                                <div class="thumb-overlay">
-                                    <a href="https://www.facebook.com/templatemo" rel="nofollow"><span class="social-icon-fb"></span></a>
-                                    <a href="#"><span class="social-icon-twitter"></span></a>
-                                    <a href="#"><span class="social-icon-linkedin"></span></a>
-                                </div>
-                            </div>
-                            <div class="team-inner">
-                                <p class="team-inner-header">LINDA</p>
-                                <p class="team-inner-subtext">Manager</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div><!-- /.templatemo-team -->
+        <?php $this->renderPartial('/site/nosotros') ?>
 
         <div id="templatemo-portfolio" >
             <div class="container">
@@ -450,7 +320,7 @@
         <div id="templatemo-blog">
             <div class="container">
                 <div class="row">
-                    <div class="templatemo-line-header" style="margin-top: 0px;" >
+                    <div class="templatemo-line-header">
                         <div class="text-center">
                             <hr class="team_hr team_hr_left hr_gray"/><span class="span_blog txt_darkgrey">BLOG POSTS</span>
                             <hr class="team_hr team_hr_right hr_gray" />
@@ -557,7 +427,7 @@
         <div id="templatemo-contact">
             <div class="container">
                 <div class="row">
-                    <div class="templatemo-line-header head_contact">
+                    <div class="templatemo-line-header head_contact" >
                         <div class="text-center">
                             <hr class="team_hr team_hr_left hr_gray"/><span class="txt_darkgrey">CONTACT US</span>
                             <hr class="team_hr team_hr_right hr_gray"/>
@@ -591,71 +461,6 @@
                 </div><!-- /.row -->
             </div><!-- /.container -->
         </div><!-- /#templatemo-contact -->
-
-
-        <div class="templatemo-tweets">
-            <div class="container">
-                <div class="row" style="margin-top:20px;">
-                    <div class="col-md-2">
-                    </div>
-                    <div class="col-md-1">
-                        <img src="images/quote.png" alt="icon" />
-                    </div>
-                    <div class="col-md-7 tweet_txt" >
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendiise as a molesti neque vestibulum,  persiutsor de andues mare fricilus ipsum dolor sit amet cons forukus.</span>
-                        <br/>
-                        <span class="twitter_user">Moe Moe, Yangon</span>
-                    </div>
-                    <div class="col-md-2">
-                    </div>
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div>
-
-        <div class="templatemo-partners" >
-            <div class="container">
-                <div class="row">
-
-
-                    <div class="templatemo-line-header" >
-                        <div class="text-center">
-                            <hr class="team_hr team_hr_left hr_gray"/><span class="txt_darkgrey">OUR PARTNERS</span>
-                            <hr class="team_hr team_hr_right hr_gray" />
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-
-
-                    <div class="text-center">
-
-                        <div style="margin-top:60px;">
-                            <ul class="list-inline">
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner1.jpg" class="img-responsive" alt="partner 1" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner2.jpg" class="img-responsive" alt="partner 2" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner3.jpg" class="img-responsive" alt="partner 3" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner4.jpg" class="img-responsive" alt="partner 4" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner5.jpg" class="img-responsive" alt="partner 5" /></a>
-                                </li>
-                                <li class="col-sm-2 col-md-2 templatemo-partner-item">
-                                    <a href="#"><img src="images/partner6.jpg" class="img-responsive" alt="partner 6" /></a>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <div class="templatemo-footer" >
@@ -695,7 +500,7 @@
                             <a class="btn btn-lg btn-orange" href="#" role="button" id="btn-back-to-top">Back To Top</a>
                             <div class="height30"></div>
                         </div>
-                        <div class="footer_bottom_content">Copyright © 2084 <a href="#">Your Company Name</a> - <a href="http://www.templatemo.com/page/1">HTML5 Template</a> by <a class="link_orange" href="http://www.templatemo.com/preview/templatemo_395_urbanic" rel="nofollow"><span class="txt_orange">Urbanic</span></a></div>
+                        <div class="footer_bottom_content">Copyright © 2014 <a href="#">Import logística</a></div>
 
                     </div>
                 </div>
@@ -705,7 +510,3 @@
         <?php $this->renderPartial('/site/login_modal') ?>        
     </body>
 </html>
-<!-- 
-    Free Responsive Template from templatemo
-    http://www.templatemo.com
--->

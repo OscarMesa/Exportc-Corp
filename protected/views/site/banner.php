@@ -12,7 +12,7 @@
                     <div class="md-slide-items" id="md-slider">
                         <div class="md-slide-item" data-timeout="2000" data-transition="slit-vertical-up" style="height: 320px; top: 0px; left: 0px; display: block;">
                             <div class="md-mainimg">
-                                <img src="megaSlider/images/1.jpg" style="max-width: 1500px; height: auto; left: 0px; top: 0px;">
+                                <img src="megaSlider/images/container.jpg" style="max-width: 1500px; height: auto; left: 0px; top: 0px;">
                             </div>
                             <div class="md-objects" style="width: 1500px; font-size: 99%;">
                                 <div class="md-object demostyle2 fadeInDownBig" data-x="40" data-y="180" data-speed="300" data-start="300" data-easein="random" data-stop="2700" data-easeout="random" style="top: 56.25%; left: 5%; display: none;">Carga internacional</div>

@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="templatemo-top-menu" style="background-color: #FFF; z-index: 1">
+        <div class="templatemo-top-menu" style="background-color: #FFF; z-index: 4">
             <div class="container">
                 <!-- Static navbar -->
                 <div class="navbar navbar-default" role="navigation">

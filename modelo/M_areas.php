@@ -7,20 +7,23 @@
  */
 
 /**
- * Description of Conexion
+ * Description of area
  *
- * @author Calcifer
+ * @author omesagar
  */
-class Conexion extends PDO{
+
+
+class M_areas extends Conexion{
     
     public function __construct() {
-        parent::__construct('mysql:host='.HOST_MYSQL.';dbname='.BD_MYSQL, USER_MYSQL, PASSWORD_MYSQL);
+        parent::__construct();
     }
     
-    public function getCostosEnvio()
+    public function getAreas()
     {
-        $data = $this->prepare("SELECT * FROM costoenvio ORDER BY destino");
+        $data = $this->prepare("SELECT * FROM areas");
         $data->execute();
         return ($data->fetchAll());
     }
+
 }

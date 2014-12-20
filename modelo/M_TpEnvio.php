@@ -7,19 +7,19 @@
  */
 
 /**
- * Description of Conexion
+ * Description of M_TpEnvio
  *
- * @author Calcifer
+ * @author omesagar
  */
-class Conexion extends PDO{
+class M_TpEnvio extends Conexion{
     
     public function __construct() {
-        parent::__construct('mysql:host='.HOST_MYSQL.';dbname='.BD_MYSQL, USER_MYSQL, PASSWORD_MYSQL);
+        parent::__construct();
     }
     
-    public function getCostosEnvio()
+    public function getTpEnvios()
     {
-        $data = $this->prepare("SELECT * FROM costoenvio ORDER BY destino");
+        $data = $this->prepare("SELECT * FROM tipo_envio");
         $data->execute();
         return ($data->fetchAll());
     }

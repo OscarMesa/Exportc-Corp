@@ -6,5 +6,6 @@
  * and open the template in the editor.
  */
 define("BD_MYSQL", "tablatarifas");
-
-define("", $value)
+define("HOST_MYSQL", "127.0.0.1",true);
+define("USER_MYSQL", "root");
+define("PASSWORD_MYSQL", "root");

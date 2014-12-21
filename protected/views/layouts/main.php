@@ -91,6 +91,14 @@
                     console.log(bth)
                     $("#bottom-region").height(bth);
                 }
+                 $(window).scroll(function () {
+                    var aTop = $('#welcome').height();
+                    if($(this).scrollTop()>=aTop)
+                        $("#btn-back-to-top").show("fast");
+                    else
+                        $("#btn-back-to-top").hide();
+                });
+
             });
         </script>
     </head>
@@ -101,14 +109,14 @@
             <div class="container">
                 <div class="subheader">
                     <div id="phone" class="pull-left">
-                        <img src="images/phone.png" alt="phone"/>
+                        <img src="images/phone-azul.png" alt="phone"/>
                         010-020-0340
                     </div>
                     <div class="main-nav">
                         <ul>
                             <!-- inser more links here -->
                             <?php if(!isset(Yii::app()->session['user'])){ ?>
-                            <li><a id="init" class="cd-signin" href="#0">Entrar</a></li>
+                            <li><a id="init" class="cd-signin" href="#0">Ingresar</a></li>
                             <?php }else{ ?>
                             <li><a class="cd-signup" id="logut" href="<?php echo Yii::app()->createAbsoluteUrl("site/logout");?>">Cerrar sesión</a></li>
                             <?php } ?>
@@ -117,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="templatemo-top-menu" style="background-color: #FFF; z-index: 4">
+        <div class="templatemo-top-menu" style="background-color: #FFF; z-index: 3">
             <div class="container">
                 <!-- Static navbar -->
                 <div class="navbar navbar-default" role="navigation">
@@ -149,7 +157,7 @@
 
         <?php $this->renderPartial('/site/banner') ?>
 
-        <div class="templatemo-welcome" id="templatemo-welcome">
+        <div id="welcome" class="templatemo-welcome" id="templatemo-welcome">
             <div class="container">
                 <div class="templatemo-slogan text-center">
                     <span class="txt_darkgrey">Bienvenido a </span><span class="txt_orange">Import Logistica</span>
@@ -178,7 +186,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <span class="social-icon-rss"></span>
+                                        <span class="social-icon-twitter"></span>
                                     </a>
                                 </li>
                                 <li>
@@ -186,19 +194,39 @@
                                         <span class="social-icon-twitter"></span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="social-icon-linkedin"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="social-icon-dribbble"></span>
-                                    </a>
-                                </li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                   <li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
+                                   <li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
+                                   <li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
+                                   <li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
+                                   <li class="dribbble animated bounceIn wow delay-06s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>
+
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                             </ul>
                             <div class="height30"></div>
-                            <a id="btn-back-to-top" style="float: right; cursor: pointer"><img src="images/flecha_arriba.png" width="50"/></a>
+                            <a id="btn-back-to-top" style=""><img src="images/flecha_arriba.png" width="50"/></a>
                             <div class="height30"></div>
                         </div>
                         <div class="footer_bottom_content">Copyright © 2014 <a href="#">Import logística</a></div>

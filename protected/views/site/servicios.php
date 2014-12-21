@@ -13,13 +13,15 @@
             <div class="col-md-4">
                 <div class="templatemo-service-item">
                     <div>
-                        <img src="images/mercancia.jpg" alt="icon" />
-                        <span class="templatemo-service-item-header">MERCANCÍA</span>
+                        <div class="container-img-serv">
+                            <img src="images/AlmDistri.jpg" alt="icon" />
+                            <span class="templatemo-service-item-header">Almacenaje y distribución</span>
+                        </div>
                     </div>
-                    <p>Nam porta adipiscing tortor, eget rutrum turpis bibendum ut. Donec eu lacus in diam euismod imperdiet eu ut turpis. Morbi felis orci, tincidunt pretium laoreet id, euismod et lacus. Praesent aliquet magna vitae mi elementum pharetra.</p>
+                    <p>Nuestra empresa ofrece los servicios de almacenaje y distribución de cargas, por ser estos servicios parte importante de la cadena logística. A través del tiempo nos hemos posicionado como una de las mejores alternativas de la industria para atender las necesidades de empresas que buscan el outsourcing de sus procesos de abastecimiento y logística.</p>
                     <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/1" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
+<!--                        <a rel="nofollow" href="http://www.templatemo.com/page/1" 
+                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>-->
                     </div>
                     <br class="clearfix"/>
                 </div>
@@ -29,13 +31,15 @@
             <div class="col-md-4">
                 <div class="templatemo-service-item" >
                     <div>
-                        <img src="images/carga.png" alt="icon"/>
-                        <span class="templatemo-service-item-header">CARGA</span>
+                        <div class="container-img-serv">
+                            <img src="images/maritimo.jpg" alt="icon"/>
+                            <span class="templatemo-service-item-header">Transporte Maritimo</span>
+                        </div>
                     </div>
-                    <p>Urbanic theme is free <a href="http://www.templatemo.com/page/1" target="_parent">responsive HTML5 template</a> by templatemo. Credits go to <a rel="nofollow" href="http://getbootstrap.com">Bootstrap</a> for responsive layout and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this <a href="http://www.tooplate.com">free template</a>. Curabitur non eros ut dolor tincidunt interdum sit amet vitae quam.</p>
+                    <p>El transporte marítimo es el principal modo de realizar el comercio internacional. A diferencia del transporte aéreo, el transporte por carretera o el transporte ferroviario, el transporte marítimo permite enviar grandes cantidades de mercancía a un coste muy económico. El transporte marítimo aglutina más del 80% del comercio internacional de mercancías.</p>
                     <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/2" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
+<!--                        <a rel="nofollow" href="http://www.templatemo.com/page/2" 
+                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>-->
                     </div>
                     <br class="clearfix"/>
                 </div>
@@ -45,13 +49,15 @@
             <div class="col-md-4">
                 <div class="templatemo-service-item">
                     <div>
-                        <img src="images/descarga.jpg" alt="icon"/>
-                        <span class="templatemo-service-item-header">DESCARGA</span>
+                        <div class="container-img-serv">
+                            <img src="images/importaciones.jpg" alt="icon"/>
+                            <span class="templatemo-service-item-header">Importación</span>
+                        </div>
                     </div>
-                    <p>Morbi imperdiet ipsum sit amet dui pharetra, vulputate porta neque tristique. Quisque id turpis tristique, venenatis erat sit amet, venenatis turpis. Ut tellus ipsum, posuere bibendum consectetur vel, egestas sit amet erat. Morbi rhoncus leo fermentum viverra.</p>
+                    <p>Si a usted le interesa Importar productos o servicios estando en Colombia desde cualquier lugar del mundo le sugerimos consultar previamente la siguiente sección de pasos y/o trámites sugeridos.</p>
                     <div class="text-center">
-                        <a rel="nofollow" href="http://www.templatemo.com/page/3" 
-                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>
+<!--                        <a rel="nofollow" href="http://www.templatemo.com/page/3" 
+                           class="templatemo-btn-read-more btn btn-orange">READ MORE</a>-->
                     </div>
                     <br class="clearfix"/>
                 </div>

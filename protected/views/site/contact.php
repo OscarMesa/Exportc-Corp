@@ -15,9 +15,9 @@
             </div>
             <div class="col-md-4 contact_right">
                 <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit pendisse as a molesti.</p>
-                <p><img src="images/location.png" alt="icon 1" /> 123 Dagon Studio, Yakin Street, Digital Estate</p>
-                <p><img src="images/phone1.png"  alt="icon 2" /> 010-020-0340</p>
-                <p><img src="images/globe.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.templatemo.com</span></a></p>
+                <p><img src="images/locationAzul.png" alt="icon 1" /> 123 Dagon Studio, Yakin Street, Digital Estate</p>
+                <p><img src="images/phone-azul.png"  alt="icon 2" /> 010-020-0340</p>
+                <p><img src="images/globeAzu.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">www.templatemo.com</span></a></p>
                 <form class="form-horizontal" action="#" style="display: none">
                     <div class="form-group">
                         <input type="email" class="form-control" placeholder="Your Name..." maxlength="40" />

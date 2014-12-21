@@ -140,12 +140,13 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     font-weight: normal;
     margin-top: 12px;
     font-size: 12px;
-    color: #E12524;
+    color: #385778;
 }
 
 
 .btn-orange {
-    background-color: #E12524;
+    /*background-color: #E12524;*/
+    background-color: #385778;
     border-bottom:2px solid #d35400;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -178,13 +179,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-    background-color: #E12524;
+/*    background-color: #E12524;*/
+    background-color: #385778;
     color:#fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    background-color: #E12524;
+    /*background-color: #E12524;*/
+    background-color: #385778;
     color:#fff;
 }
 
@@ -200,7 +203,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #E12524;
+    /*background-color: #E12524;*/
+    background-color: #385778;
     color:#fff;
 }
 
@@ -212,11 +216,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-left: -10px; 
     padding: 16px 20px 20px; 
     font-weight: bold;
-    display: inline-block;
+    display: block;
 }
 
 .templatemo-header-orange {
-    background-color:#E12524;
+    /*background-color:#E12524;*/
+    background-color: #385778;
     min-width: 298px;
     height: 67px;
     color: #fff; 
@@ -240,6 +245,15 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .hr_gray {
     border: 1px solid #cccccc; 
+}
+
+#btn-back-to-top{
+    float: right;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 33px;
+    display: none;
 }
 
 .templatemo-team {
@@ -325,7 +339,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .project-overlay {
     background : rgba(0,0,0,.75);
-    border : 2px solid #E12524;
+    /*border : 2px solid #E12524;*/
+    border : 2px solid #385778;
     visibility: hidden;
     position: absolute;
     text-align:center;
@@ -353,7 +368,7 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .txt_orange {
-    color: #E12524;
+    color: #385778;
 }
 
 .txt_slogan {
@@ -362,11 +377,17 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 }
 
 .templatemo-line-header span {
-    font-size: 18px; 
-    float :left; 
+    font-size: 28px;
+    float: left;
     margin-top: 10px;
+    font-weight: bold;
+    font-family: serif;
 }
 
+.container-img-serv{
+    width: 100%;
+    text-align: center;
+}
 .team_box  div {
     text-align: center; 
     padding-top: 100px;
@@ -509,7 +530,8 @@ a:hover .social-icon-dribbble {
 }
 
 ul.templatemo-project-gallery  li  a img:hover {
-    border: 3px solid #E12524;
+    /*border: 3px solid #E12524;*/
+    border: 3px solid #385778;
 }
 
 .templatemo-gallery-category a {
@@ -573,6 +595,29 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 .blog_box {
 	margin-left: -12px;
+}
+.navbar-nav li a {
+    font-family: serif;
+}
+#contenedor{
+    width: 100%;
+}
+
+#contenedor .bloque{
+    display: inline-block;	/* Es esencial para que se muestren los bloques en línea */
+    width: 48%;
+    /*border:1px solid #333;*/
+    /*background: #999;*/
+    margin-left:20px;
+    font-family: serif;
+    text-align: justify;
+    vertical-align: top;
+}
+
+.subtitulos{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 13px;
 }
 
 @media (min-width:991px) and (max-width:1200px) {
@@ -638,7 +683,9 @@ ul.templatemo-project-gallery  li  a img:hover {
   .navbar-nav > li > a {
     padding-top: 9px;
     padding-bottom: 9px;
-  } 
+  }
+  
+
 }
 
 @media (max-width: 768px) {
@@ -688,6 +735,10 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 30%;
 	}
+        
+        #contenedor .bloque{
+            width: 100%;
+        }
 }
 
 @media (min-width:536px) and ( max-width: 585px) {
@@ -706,4 +757,13 @@ ul.templatemo-project-gallery  li  a img:hover {
 	 .team_hr {
 		width: 11%;
 	}
+}
+
+@media (max-width: 900px){
+    #contenedor .bloque{
+        display: inline-block;	/* Es esencial para que se muestren los bloques en línea */
+        width: 100%;
+        /*border:1px solid #333;*/
+        /*background: #999;*/
+    }
 }

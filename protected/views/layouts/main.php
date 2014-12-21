@@ -178,22 +178,8 @@
                     <div class="text-center">
 
                         <div class="footer_container">
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="#">
-                                        <span class="social-icon-fb"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="social-icon-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="social-icon-twitter"></span>
-                                    </a>
-                                </li>
+                            <ul class="list-inline social-link">
+                                
                                 
                                 
                                 

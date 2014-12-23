@@ -56,7 +56,16 @@ class C_envio {
         return $result_data;
     }
     
-    
+    public function searchDestinoAjax()
+    {
+        $data = $this->envio->getEnvios($_REQUEST['q']);
+        $result_data = array();
+//        $result_data [] = array('id'=>'','text'=>'');
+        foreach ($data as $row) {
+            $result_data[] = array('id'=>$row['id'],'text'=>$row['destino'],'data'=>$row);
+        }
+        echo json_encode($result_data);
+    }
     
     
 }

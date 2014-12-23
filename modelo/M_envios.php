@@ -16,9 +16,9 @@ class M_envios extends Conexion{
         parent::__construct();
     }
     
-    public function getEnvios()
+    public function getEnvios($des = "")
     {
-        $data = $this->prepare("SELECT * FROM destinos");
+        $data = $this->prepare("SELECT * FROM destinos WHERE destino LIKE '%".$des."%' LIMIT 10");
         $data->execute();
         return ($data->fetchAll());
     }

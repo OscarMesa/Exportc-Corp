@@ -89,7 +89,7 @@ $ctr_areas = new C_envio();
 
                                                                     <div class="prop"><label for="cotizacionForm:j_id145:tipoDocumentoValueId" class="name  ">
                                                                             Tipo de envío<span id="cotizacionForm:j_id145:j_id149" class="required">*</span></label><span id="cotizacionForm:j_id145:j_id151" class="value  ">
-                                                                                <input type="hidden" id="tpEnvio" name="tpEnvio" class="tipoDocumentoValueId" size="1" onchange="" style="width:260px"><br>	
+                                                                            <input type="hidden" id="tpEnvio" name="tpEnvio" class="tipoDocumentoValueId" size="1" onchange="" style="width:260px"><br>	
                                                                         </span><span id="cotizacionForm:j_id145:j_id156" class="error"></span>
 
                                                                     </div></div></td>
@@ -156,6 +156,7 @@ $ctr_areas = new C_envio();
         $(document).on('ready', function () {
             $("#area").select2({
                 placeholder: "Area",
+                allowClear: true,
                 query: function (query) {
                     var data = {
                         results: <?php echo json_encode($ctr_areas->obtenerAreas()); ?>
@@ -166,24 +167,41 @@ $ctr_areas = new C_envio();
             });
             $("#area").on("change", function () {
                 habilitarTipoEnvio();
-                if($("#tpEnvio").select2('data') != null && $("#tpEnvio").select2('data').data.identificador == 'C')
+                if ($("#tpEnvio").select2('data') != null && $("#tpEnvio").select2('data').data.identificador == 'C')
                 {
                     listarDatosEnvio();
                 }
             });
             $("#destion").select2({
                 placeholder: "Destino",
-                query: function (query) {
-                    var data = {
-                        results: <?php echo json_encode($ctr_areas->obtenerDestinos()); ?>
-                    };
+                allowClear: true,
+                ajax: {// instead of writing the function to execute the request we use Select2's convenient helper
+                    url: "controlador/index.php?ctr=C_envio&acc=searchDestinoAjax",
+                    dataType: 'json',
+                    quietMillis: 250,
+                    data: function (term, page) {
+                        return {
+                            q: term, // search term
+                        };
+                    },
+                    results: function (data, page) { // parse the results into the format expected by Select2.
+                        // since we are using custom formatting functions we do not need to alter the remote JSON data
+                        return {results: data};
+                    },
+                    cache: true
+                },
+//                query: function (query) {
+//                    var data = {
+//                        results: <?php echo json_encode($ctr_areas->obtenerDestinos()); ?>
+//                    };
+//
+//                    query.callback(data);
+//                }
 
-                    query.callback(data);
-                }
             });
             $("#destion").on("change", function () {
                 habilitarTipoEnvio();
-                if($("#tpEnvio").select2('data') != null && $("#tpEnvio").select2('data').data.identificador == 'C')
+                if ($("#tpEnvio").select2('data') != null && $("#tpEnvio").select2('data').data.identificador == 'C')
                 {
                     listarDatosEnvio();
                 }
@@ -204,32 +222,32 @@ $ctr_areas = new C_envio();
             $("#tpEnvio").on("change", function (e) {
                 listarDatosEnvio();
             });
-            
-            $("#txtpeso").keyup(function (){
-                this.value = (this.value + '').replace(/[^0-9+\-Ee.]/g,'');
-                if(this.value <= 30)
+
+            $("#txtpeso").keyup(function () {
+                this.value = (this.value + '').replace(/[^0-9+\-Ee.]/g, '');
+                if (this.value <= 30)
                 {
-                    $("#lbl-costoEnvioCarga").html("<b>" +$("#destion").select2("data").data.minimoKG+ "</b>");
-                }else{
-                    $("#lbl-costoEnvioCarga").html("<b>" + ((this.value - 30) * (parseInt($("#destion").select2("data").data.kilo)+parseInt($("#destion").select2("data").data.minimoKG))) + "</b>");
+                    $("#lbl-costoEnvioCarga").html("<b>" + $("#destion").select2("data").data.minimoKG + "</b>");
+                } else {
+                    $("#lbl-costoEnvioCarga").html("<b>" + ((this.value - 30) * (parseInt($("#destion").select2("data").data.kilo) + parseInt($("#destion").select2("data").data.minimoKG))) + "</b>");
                 }
             });
         });
-        
+
         function listarDatosEnvio()
         {
-            if($("#tpEnvio").select2('data').data.identificador == 'C'){
-                $("#lbl-area").html("Área:<b>"+$("#area").select2('data').data.descripcion+"</b>");
-                $("#lbl-destino").html("Destino:<b>"+$("#destion").select2('data').data.destino+"</b>");
-                $("#lbl-costoEnvio").html("Costo:<b>"+$("#destion").select2('data').data.sobre+"</b>");
-                $("#info_correo").css("display","block");
-                $("#info_carga").css("display","none");
-            }else if($("#tpEnvio").select2('data').data.identificador == 'P'){
-                $("#info_carga").css("display","block");
-                $("#info_correo").css("display","none");
-            }else{
-                $("#info_correo").css("display","none");
-                $("#info_carga").css("display","none");
+            if ($("#tpEnvio").select2('data').data.identificador == 'C') {
+                $("#lbl-area").html("Área:<b>" + $("#area").select2('data').data.descripcion + "</b>");
+                $("#lbl-destino").html("Destino:<b>" + $("#destion").select2('data').data.destino + "</b>");
+                $("#lbl-costoEnvio").html("Costo:<b>" + $("#destion").select2('data').data.sobre + "</b>");
+                $("#info_correo").css("display", "block");
+                $("#info_carga").css("display", "none");
+            } else if ($("#tpEnvio").select2('data').data.identificador == 'P') {
+                $("#info_carga").css("display", "block");
+                $("#info_correo").css("display", "none");
+            } else {
+                $("#info_correo").css("display", "none");
+                $("#info_carga").css("display", "none");
             }
         }
 
@@ -239,8 +257,8 @@ $ctr_areas = new C_envio();
             else
                 $("#tpEnvio").select2('disable');
         }
-        
-        
+
+
         function calcularTarifa()
         {
             $("#txtpeso")

@@ -10,7 +10,7 @@ jQuery(function ($) {
 
         top_menu_height = $('.templatemo-top-menu').height();
         // scroll spy to auto active the nav item
-        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 100});
+//        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 100});
 
 
 
@@ -28,6 +28,8 @@ jQuery(function ($) {
             if ($('.navbar-toggle').is(":visible") == true) {
                 $('.navbar-collapse').collapse('toggle');
             }
+            $('.navbar-nav li').removeClass('active');
+            $(this).parent().addClass('active');
             $(this).blur();
             return false;
         });

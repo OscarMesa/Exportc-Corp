@@ -140,7 +140,7 @@
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar">
                             <ul class="nav navbar-nav navbar-right" style="margin-top: 40px;">
-                                    <li class="active"><a href="#templatemo-top">INICIO</a></li>
+                                <li class="active"><a href="#templatemo-top">INICIO</a></li>
                                 <li><a href="#templatemo-about">NOSOTROS</a></li>
                                 <li><a href="#templatemo-service">SERVICIOS</a></li>
                                 <li><a href="#templatemo-contact">CONTACTO</a></li>

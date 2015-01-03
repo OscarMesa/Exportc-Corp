@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<!-- 
-    Free Responsive Template by templatemo
-    http://www.templatemo.com
--->
+
 <html lang="en"> 
     <head>
         <title><?php echo CHtml::encode(Yii::app()->name); ?></title>
         <meta name="keywords" content="urbanic, responsive, bootstrap, fluid layout, orange, white, free website template, templatemo" />
         <meta name="description" content="Urbanic is free responsive template using Bootstrap which is compatible with mobile devices. This layout is provided by templatemo for free of charge." />
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
         <!--<link rel="shortcut icon" href="PUT YOUR FAVICON HERE">-->
 
 
         <!-- Google Web Font Embed -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>-->
 
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
@@ -22,6 +18,7 @@
         <!-- Custom styles for this template -->
         <link href="js/colorbox/colorbox.css"  rel='stylesheet' type='text/css'>
         <link href="css/templatemo_style.css"  rel='stylesheet' type='text/css'>
+        
 
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -163,6 +160,11 @@
                     <span class="txt_darkgrey">Bienvenido a </span><span class="txt_orange">Import Logistica</span>
                     <!--<p class="txt_slogan"><i>Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam metus libero mauriec ignissim fermentum.</i></p>-->
                 </div>	
+                <div class="quote_section">
+                    <div class="quote_arrow"></div>
+                    <p><b><img src="images/quote_sign_left.png" alt=""></b> Nos preocupamos por su mercancia, para que llegue a salvo a su destino. 
+                        <small><img src="images/quote_sign_right.png" alt=""></small> </p>
+              </div>
             </div>
         </div>
 
@@ -176,40 +178,13 @@
             <div class="container">
                 <div class="row">
                     <div class="text-center">
-
-                        <div class="footer_container">
-                            <ul class="list-inline social-link">
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                        <div style="width: 100%; text-align: center" class="footer_container">
+                            <ul  class="list-inline social-link">
                                    <li class="twitter animated bounceIn wow delay-02s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-twitter"></i></a></li>
                                    <li class="facebook animated bounceIn wow delay-03s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-facebook"></i></a></li>
                                    <li class="pinterest animated bounceIn wow delay-04s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-pinterest"></i></a></li>
                                    <li class="gplus animated bounceIn wow delay-05s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-google-plus"></i></a></li>
-                                   <li class="dribbble animated bounceIn wow delay-06s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>
-
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                                   <li class="dribbble animated bounceIn wow delay-06s animated" style="visibility: visible; -webkit-animation: bounceIn;"><a href="javascript:void(0)"><i class="fa-dribbble"></i></a></li>    
                             </ul>
                             <div class="height30"></div>
                             <a id="btn-back-to-top" style=""><img src="images/flecha_arriba.png" width="50"/></a>
@@ -223,5 +198,7 @@
         </div>
 
         <?php $this->renderPartial('/site/login_modal') ?>        
+        <link href="css/font-awesome.css"  rel='stylesheet' type='text/css'>
+        <link href="css/style.css"  rel='stylesheet' type='text/css'>
     </body>
 </html>

@@ -50,7 +50,6 @@
 /* arrow */
 .md-arrow {opacity: 0;}
 .md-arrow-left,
-.md-arrow-right {background: url(../images/md-arrow.png) no-repeat 0 0; width: 40px; height: 40px;position: absolute; top: 50%; margin-top: -20px; cursor: pointer; z-index: 3}
 .md-arrow-left {left: 10px}
 .md-arrow-right {right: 10px; background-position: -40px 0}
 

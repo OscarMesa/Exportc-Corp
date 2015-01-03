@@ -88,7 +88,7 @@ function initialize() {
 // scroll animation 
 function scrollTo(selectors)
 {
-
+    
     if (!$(selectors).size())
         return;
     var selector_top = $(selectors).offset().top - top_menu_height;

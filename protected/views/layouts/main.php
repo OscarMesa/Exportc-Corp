@@ -1,5 +1,5 @@
-
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="es"> 
     <head>
         <title><?php echo CHtml::encode(Yii::app()->name); ?></title>
         <meta name="keywords" content="urbanic, responsive, bootstrap, fluid layout, orange, white, free website template, templatemo" />

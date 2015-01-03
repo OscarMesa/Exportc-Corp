@@ -135,7 +135,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand" href="" rel="nofollow">
-                                <img src="images/importLogistica_logo.jpg" alt="logo"/>
+                                <img src="images/importLogistica_logo.jpg" alt="logo" style="width: 170px;height: 110px;"/>
                             </a>
                         </div>
                         <div class="navbar-collapse collapse" id="templatemo-nav-bar">

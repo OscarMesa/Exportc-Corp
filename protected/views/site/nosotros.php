@@ -12,8 +12,9 @@
 
         <div class="blog_box">
            
-            <div id="contenedor" style="margin-top: 10px">
+            <div id="contenedor">
                 <div style="text-align: center"><img src="images/Pantos_Logistics_Warehouse_picture.jpg" width="1000" height="300" style="text-align: center"></div>
+                <div id="bloq-nosotros">
                 <div class="bloque">
                     <h1 class="subtitulos">Misión</h1>
                     <p>
@@ -27,7 +28,7 @@
                         En el 2015 seremos el mejor aliado estratégico en el desarrollo de actividades logísticas, tales como distribución nacional, urbana, importación. Exportación y manejo de inventarios, permitiendo el crecimiento económico de Tkarga, entregando beneficios a nuestros clientes internos y externos. 
                     </p>
                 </div>
-                
+                </div>
             </div>
             
 

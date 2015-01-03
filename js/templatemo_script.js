@@ -10,7 +10,7 @@ jQuery(function ($) {
 
         top_menu_height = $('.templatemo-top-menu').height(); 
         // scroll spy to auto active the nav item
-//        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 100});
+//        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
 
           $("html, body").animate({ scrollTop: 0 }, "slow");
 
@@ -23,14 +23,17 @@ jQuery(function ($) {
 
         // scroll to specific id when click on menu
         $('.templatemo-top-menu .navbar-nav a').click(function (e) {
+            $('.navbar-nav li').removeClass('active');
+            $(this).parent().addClass('active');
             e.preventDefault();
             var linkId = $(this).attr('href');
             scrollTo(linkId);
             if ($('.navbar-toggle').is(":visible") == true) {
                 $('.navbar-collapse').collapse('toggle');
             }
-            $('.navbar-nav li').removeClass('active');
-            $(this).parent().addClass('active');
+            setTimeout(function(){
+                
+            },900);
             $(this).blur();
             return false;
         });
@@ -39,19 +42,7 @@ jQuery(function ($) {
         $('.templatemo-top-menu ').stickUp();
 
         // gallery category
-        $('.templatemo-gallery-category a').click(function (e) {
-            e.preventDefault();
-            $(this).parent().children('a').removeClass('active');
-            $(this).addClass('active');
-            var linkClass = $(this).attr('href');
-            $('.gallery').each(function () {
-                if ($(this).is(":visible") == true) {
-                    $(this).hide();
-                }
-                ;
-            });
-            $(linkClass).fadeIn();
-        });
+       
 
         //gallery light box setup
         $('a.colorbox').colorbox({
@@ -72,7 +63,7 @@ function initialize() {
         navigationControl: false,
         mapTypeControl: false,
         scaleControl: false,
-        draggable: false,
+        draggable: true,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 

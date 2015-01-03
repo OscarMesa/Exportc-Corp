@@ -115,10 +115,6 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     color: #333333;
 }
 
-.templatemo-service {
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
 
 .templatemo-service-item {
     font-family:  'Open Sans', sans-serif;
@@ -375,6 +371,9 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     font-size:14px; 
     color:#929292;
 }
+#bloq-nosotros{
+    margin-top: 38px;   
+}
 
 .templatemo-line-header span {
     font-size: 24px;
@@ -413,8 +412,12 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin-top: 20px;
 }
 
+#templatemo-service{
+    border-top: 1px solid #cccccc; 
+    padding-top: 57px;
+}
+
 #templatemo-contact {
-    margin-top:100px; 
     border-top: 1px solid #cccccc; 
     font-size:14px;
 }

@@ -12,7 +12,7 @@
 
         <div class="blog_box">
            
-            <div id="contenedor">
+            <div id="contenedor" style="margin-top: 10px">
                 <div style="text-align: center"><img src="images/Pantos_Logistics_Warehouse_picture.jpg" width="1000" height="300" style="text-align: center"></div>
                 <div class="bloque">
                     <h1 class="subtitulos">Misión</h1>

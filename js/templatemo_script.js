@@ -8,7 +8,7 @@ jQuery(function ($) {
                 'callback=initialize';
         document.body.appendChild(script);
 
-        top_menu_height = $('.templatemo-top-menu').height();
+        top_menu_height = $('.templatemo-top-menu').height(); 
         // scroll spy to auto active the nav item
 //        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 100});
 

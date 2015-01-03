@@ -754,12 +754,14 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 @media  (min-width:410px) and  ( max-width: 536px) {
     .team_hr {
-        width: 21%;
+        width: 28%;
     }
     
     .templatemo-line-header span{
         font-size: 24px; 
     }
+    
+    
 }
 
 @media  ( max-width: 410px) {

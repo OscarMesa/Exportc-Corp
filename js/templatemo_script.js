@@ -12,6 +12,7 @@ jQuery(function ($) {
         // scroll spy to auto active the nav item
 //        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height + 100});
 
+          $("html, body").animate({ scrollTop: 0 }, "slow");
 
 
         // scroll to top

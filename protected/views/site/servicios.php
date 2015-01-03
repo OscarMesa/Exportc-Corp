@@ -50,7 +50,7 @@
                 <div class="templatemo-service-item">
                     <div>
                         <div class="container-img-serv">
-                            <img src="images/importaciones.jpg" alt="icon"/>
+                            <img src="images/Importaciones-1.jpg" alt="icon"/>
                             <span class="templatemo-service-item-header">Importación</span>
                         </div>
                     </div>

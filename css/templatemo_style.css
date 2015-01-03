@@ -723,7 +723,7 @@ ul.templatemo-project-gallery  li  a img:hover {
 
 @media (min-width:683px) and ( max-width: 991px) {
     .team_hr {
-        width: 33%;
+        width: 32%;
     }
 }
 
@@ -733,7 +733,7 @@ ul.templatemo-project-gallery  li  a img:hover {
 
     }
     .team_hr {
-        width: 30%;
+        width: 27%;
     }
 
     #contenedor .bloque{
@@ -745,11 +745,20 @@ ul.templatemo-project-gallery  li  a img:hover {
     .team_hr {
         width: 28%;
     }
+    
+    
+    .templatemo-line-header span{
+        font-size: 24px; 
+    }
 }
 
 @media  (min-width:410px) and  ( max-width: 536px) {
     .team_hr {
         width: 21%;
+    }
+    
+    .templatemo-line-header span{
+        font-size: 24px; 
     }
 }
 

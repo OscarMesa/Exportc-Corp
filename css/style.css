@@ -133,57 +133,6 @@ p{
 .res-nav_click{ display:none;}
 	
 
-/* Nav Styles
----------------------------------*/
-	
-.nav{
-	float:right;
-	}
-	
-.nav ul{
-	list-style:none;
-	padding:0px;
-	}
-.nav ul.toggle{
-	display:none;
-	visibility:hidden;
-	height:0px;
-	overflow:hidden;
-	margin-bottom: 0;
-	}
-	
-.nav ul li{
-	display:inline-block;
-	margin:0 23px;
-	}
-	
-.nav ul li:first-child{
-	/*margin:0px;*/
-	}
-	
-.nav ul li:last-child{
-	margin:0 0 0 23px;
-	}
-	
-.nav ul li a{
-	display:block;
-	font-size:14px;
-	color:#222222;
-	font-family:'Dosis';
-	text-decoration:none;
-	text-transform:uppercase;
-	font-weight: 600;
-	transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;	
-	}
-.nav ul li a:hover{
-	color:#49b5e7;
-	}
-	
-
-	
-
 /* Top_content
 ---------------------------------*/
 

@@ -10,9 +10,9 @@ jQuery(function ($) {
 
         top_menu_height = $('.templatemo-top-menu').height(); 
         // scroll spy to auto active the nav item
-//        $('body').scrollspy({target: '#templatemo-nav-bar', offset: top_menu_height});
+        $('body').scrollspy({ target: '#templatemo-nav-bar', offset: 300 });
 
-          $("html, body").animate({ scrollTop: 0 }, "slow");
+//          $("html, body").animate({ scrollTop: 0 }, "slow");
 
 
         // scroll to top
@@ -23,8 +23,8 @@ jQuery(function ($) {
 
         // scroll to specific id when click on menu
         $('.templatemo-top-menu .navbar-nav a').click(function (e) {
-            $('.navbar-nav li').removeClass('active');
-            $(this).parent().addClass('active');
+//            $('.navbar-nav li').removeClass('active');
+//            $(this).parent().addClass('active');
             e.preventDefault();
             var linkId = $(this).attr('href');
             scrollTo(linkId);

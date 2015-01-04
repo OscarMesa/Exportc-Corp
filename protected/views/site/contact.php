@@ -1,6 +1,6 @@
-<div id="templatemo-contact">
-    <div class="container">
-        <div class="row">
+<div class="templatemo-contact">
+    <div class="container" id="templatemo-contact">
+        <div class="row" id="prueba1">
             <div class="templatemo-line-header head_contact" >
                 <div class="text-center">
                     <hr class="team_hr team_hr_left hr_gray"/><span class="txt_darkgrey">CONTACTO</span>

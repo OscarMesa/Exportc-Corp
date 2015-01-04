@@ -1,5 +1,5 @@
-<div id="templatemo-service" class="templatemo-service">
-    <div class="container">
+<div  class="templatemo-service">
+    <div class="container" id="templatemo-service">
         <div class="row">
             <div class="templatemo-line-header" >
                 <div class="text-center">

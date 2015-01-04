@@ -49,6 +49,7 @@
         <script src="js/colorbox/jquery.colorbox-min.js"  type="text/javascript"></script>
         <script src="js/templatemo_script.js"  type="text/javascript"></script>
         <script src="login-modal/js/main.js"></script> <!-- Gem jQuery -->
+        <script src="js/jquery.validate.js"></script> <!-- Gem jQuery -->
         
        
         

@@ -487,3 +487,24 @@ Stack trace:
 REQUEST_URI=/Exportc-Corp/index.php?r=site/EnviarCorreoContactanos
 HTTP_REFERER=http://localhost/Exportc-Corp/
 ---
+2015/01/04 17:28:04 [error] [exception.Swift_RfcComplianceException] exception 'Swift_RfcComplianceException' with message 'Address in mailbox given [] does not comply with RFC 2822, 3.6.2.' in C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php:309
+Stack trace:
+#0 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(239): Swift_Mime_Headers_MailboxHeader->_assertValidAddress('')
+#1 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(97): Swift_Mime_Headers_MailboxHeader->normalizeMailboxes(Array)
+#2 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\Headers\MailboxHeader.php(61): Swift_Mime_Headers_MailboxHeader->setNameAddresses(Array)
+#3 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMimeEntity.php(571): Swift_Mime_Headers_MailboxHeader->setFieldBodyModel(Array)
+#4 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\vendors\swiftMailer\classes\Swift\Mime\SimpleMessage.php(199): Swift_Mime_SimpleMimeEntity->_setHeaderFieldModel('From', Array)
+#5 C:\xampp\htdocs\Exportc-Corp\protected\extensions\yii-mail\YiiMailMessage.php(78): Swift_Mime_SimpleMessage->setFrom(Array)
+#6 C:\xampp\htdocs\Exportc-Corp\protected\controllers\SiteController.php(37): YiiMailMessage->__set('from', Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionEnviarCorreoContactanos()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('EnviarCorreoCon...')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/EnviarCorr...')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\Exportc-Corp\index.php(16): CApplication->run()
+#15 {main}
+REQUEST_URI=/Exportc-Corp/index.php?r=site/EnviarCorreoContactanos
+HTTP_REFERER=http://localhost/Exportc-Corp/
+---

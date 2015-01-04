@@ -59,7 +59,7 @@
                                             </table>
                                             <table width="580" height="40" align="center" border="0" cellspacing="0" cellpadding="0">
                                                 <tr>
-                                                    <td width="300"><p style="text-align:left; font-size: 20px; color: #000000; line-height:10px; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif"><strong>Hola, <?php echo $admin->nombre; ?></strong><br/>
+                                                    <td width="300"><p style="text-align:left; font-size: 20px; color: #000000; line-height:10px; font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif"><strong>Hola</strong><br/>
                                                         </p></td>
                                                     <td align="right">
                                                         <table width="280"  align="center" border="0" cellspacing="0" cellpadding="0">

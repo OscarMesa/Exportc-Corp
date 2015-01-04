@@ -50,6 +50,14 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
     margin: 10px 0 0 0;
 }
 
+#img-load{
+    float: right;
+    width: 8%;
+    margin-top: 6px;
+    display: none;
+}
+
+
 /* ------ Carousel ----- */
 
 #templatemo-carousel {
@@ -152,6 +160,21 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Open Sans', Arial, Helvetice Neu
 
 .btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
     background-color: #d35400;
+    color:#ffffff;
+}
+
+.btn-blue {
+    /*background-color: #E12524;*/
+    background-color: #385778;
+    border-bottom:2px solid #d35400;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color:#ffffff;
+}
+
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open .dropdown-toggle.btn-blue {
+    background-color: #385778;
     color:#ffffff;
 }
 

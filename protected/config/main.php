@@ -78,6 +78,20 @@ return array(
 				*/
 			),
 		),
+                'mail' => array(
+                    'class' => 'ext.yii-mail.YiiMail',
+                    'transportType' => 'smtp',
+                    'transportOptions' => array(
+                        'host' => 'smtp.gmail.com',
+                        'username' => 'import.openetwork@gmail.com',
+                        'password' => 'ppN2s9M4',
+                        'port' => '465',
+                        'encryption' => 'ssl',
+                    ),
+                    'viewPath' => 'application.views.mail',
+                    'logging' => true,
+                    'dryRun' => false
+                ),
 	),
 
 	// application-level parameters that can be accessed

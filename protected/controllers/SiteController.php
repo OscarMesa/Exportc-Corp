@@ -21,6 +21,23 @@ class SiteController extends Controller
 		);
 	}
         
+        
+        /**
+         * Con este metodo se puede enviar un correo de contactanos a gmail.
+         */
+        public function actionEnviarCorreoContactanos()
+        {
+            Yii::import('ext.yii-mail.YiiMailMessage');
+            $message = new YiiMailMessage;
+            $message->view = "nuevoMensaje";
+            $params = array('nombre' => $_REQUEST["nombre"],'email' => $_REQUEST["email"],'mensaje' => $_REQUEST["mensaje"]);
+            $message->subject = ucwords($_REQUEST["nombre"]).' a enviado un nuevo mensaje.';
+            $message->setBody($params, 'text/html');
+            $message->to = array('import.openetwork@gmail.com'=>'importaciones','waldo.j510@gmail.com'=>'Jonhatan');
+            $message->from = array($_REQUEST["email"]=>$_REQUEST["nombre"]);
+            Yii::app()->mail->send($message);
+        }
+
         public function validarLogin()
         {
             if(isset(Yii::app()->session['user']))

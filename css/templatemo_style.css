@@ -640,6 +640,11 @@ ul.templatemo-project-gallery  li  a img:hover {
     vertical-align: top;
 }
 
+#enviar-correo{
+    background-color: #385778;
+    color: white;
+}
+
 .subtitulos{
     font-weight: bold;
     font-size: 22px;

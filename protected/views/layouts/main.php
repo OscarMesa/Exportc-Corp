@@ -108,7 +108,7 @@
                 <div class="subheader">
                     <div id="phone" class="pull-left">
                         <img src="images/phone-azul.png" alt="phone"/>
-                        010-020-0340
+                        +86 132 68284164 +86 13926489420 +86 13926234354 +57 (4) 2040782
                     </div>
                     <div class="main-nav">
                         <ul>

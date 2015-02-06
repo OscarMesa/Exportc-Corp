@@ -16,8 +16,8 @@
             <div class="col-md-4 contact_right">
                 <p>Lorem ipsum dolor sit amet, consectetu adipiscing elit pendisse as a molesti.</p>
                 <p><img src="images/locationAzul.png" alt="icon 1" /> 123 Dagon Studio, Yakin Street, Digital Estate</p>
-                <p><img src="images/phone-azul.png"  alt="icon 2" /> 010-020-0340</p>
-                <p><img src="images/globeAzu.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">web.openetwork.co/</span></a></p>
+                <p><img src="images/phone-azul.png"  alt="icon 2" /> +86 132 68284164 +86 13926489420 +86 13926234354 +57 (4) 2040782</p>
+                <p><img src="images/globeAzu.png" alt="icon 3" /><a class="link_orange" href="#"><span class="txt_orange">info@importlogistica.co</span></a></p>
                 <form class="form-horizontal" id="frm-contactanos" action="#" method="POST" style="margin-top: 15px">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Tu nombre..." maxlength="40" />

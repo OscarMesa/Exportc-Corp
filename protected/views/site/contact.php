@@ -9,7 +9,8 @@
             </div>
 <!-- cambios paraa subir a gir-->
             <div class="col-md-8">
-                <div class="templatemo-contact-map" id="map-canvas"> </div>  
+                <!--<div class="templatemo-contact-map" id="map-canvas"> </div>-->  
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d940406.0649957141!2d113.3206309!3d22.9700624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x315285f132af5c3f%3A0x2ed41c6f09259f29!2sProvincia+de+Cant%C3%B3n%2C+China!5e0!3m2!1ses-419!2s!4v1423219724194" width="708" height="407" frameborder="0" style="border:0"></iframe>
                 <div class="clearfix"></div>
                 <i>You can find us on 123 Dagon Studio, Yankin Street, <span class="txt_orange">Digital Estate</span> in Yangon.</i>
             </div>

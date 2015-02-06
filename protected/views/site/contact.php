@@ -7,7 +7,7 @@
                     <hr class="team_hr team_hr_right hr_gray"/>
                 </div>
             </div>
-
+<!-- cambios paraa subir a gir-->
             <div class="col-md-8">
                 <div class="templatemo-contact-map" id="map-canvas"> </div>  
                 <div class="clearfix"></div>
